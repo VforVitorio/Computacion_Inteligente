@@ -1,19 +1,19 @@
-# Repositorio de Computación Inteligente
+# Repositorio de Computación Inteligente.
 
-## Descripción
+## Descripción.
 
 Este es el archivo readme donde se irán añadiendo todos los programas realizados en la asignatura de computación inteligente.
 
 > [!WARNING]
 > Este es un repositorio en constante desarrollo. El archivor readme se irá actualizando conforme vayan surgiendo nuevos proyectos a realizar.
 
-### Problema de las n reinas
+### Problema de las n reinas.
 
-#### Descripción del problema
+#### Descripción del problema.
 
 Deseamos implementar un programa en Python o C que reciba un parámetro n y codifique las restricciones SAT para resolver el problema de las N reinas, siendo N la n que ingrese el usuario.
 
-#### OBJETIVOS
+##### OBJETIVOS
 
 1. Establecer las restricciones en lógica proposicional.
 
@@ -26,7 +26,9 @@ Deseamos implementar un programa en Python o C que reciba un parámetro n y codi
 4. Mediante Clasp, obtener el numero de soluciones posibles.
 
 > [!IMPORTANT]
-> Es necesario recordar la sintaxis del formato DIMACS, por lo que se proporciona un ejemplo a continuación:  
+> Es necesario recordar la sintaxis del formato DIMACS, por lo que se proporciona un ejemplo a continuación:
+>
+> ```
 > c (-p\/-r\/t) /\ (-p \/-r \/-u) /\ (-q \/s \/t) /\ (-q \/s \/-u)
 > c p = 1, q = 2, r = 3, s = 4, t =5, u = 6
 > c Cada clausula es una linea
@@ -36,3 +38,4 @@ Deseamos implementar un programa en Python o C que reciba un parámetro n y codi
 > -1 -3 -6 0
 > -2 4 5 0
 > -2 4 -6 0
+> ```
