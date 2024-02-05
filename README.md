@@ -39,3 +39,8 @@ Deseamos implementar un programa en Python o C que reciba un parámetro n y codi
 > -2 4 5 0
 > -2 4 -6 0
 > ```
+>
+> ## Proposiciones
+> Las filas y columnas las denomtamos como "i" y "j". Estos dos símbolos van a estar presentes en todas nuestras proposicones
+> ## i
+> Proposición R_(ij)
