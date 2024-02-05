@@ -43,4 +43,27 @@ Deseamos implementar un programa en Python o C que reciba un parámetro n y codi
 > ## Proposiciones
 > Las filas y columnas las denomtamos como "i" y "j". Estos dos símbolos van a estar presentes en todas nuestras proposicones
 > ## i
-> Proposición R_(ij)
+> Proposición R<sub>ij representa una casilla del tablero donde se encuentra una reina. A partir de ella podremos definir las retricciones.
+>
+> ### Restricciones
+> 1. Filas
+> 2. Columnas
+> 3. Diagonales
+>    3.1 Principal
+>    3.2 Inversa
+>Restricción de fila
+Podemos expresarla como proposición F<sub>i ,  que asegura que no hay más de una reina en la fila
+
+Fi = (Pi1 \/ Pi2.... \/ Pin) /\ -(Pi1 /\ Pi2) /\ -(Pi1 /\ Pi3) /\ ... /\ -(Pi(n-1) /\ Pin)
+
+Se compone la primera parte:
+
+                     (Pi1 \/ Pi2.... \/ Pin)
+
+que represente todas las disyuniones Rij para la fila i. Es decir qe al menos una de las variables para la fila i. Es decir, que al menos una de las variables Rij debe ser verdadera para que la fila i tenga una reina.
+
+La segunda parte 
+
+-(Pij /\ Pi2) /\
+
+Cada bloque de negación asegura que dos variables Pij puedan ser ambas verdaeras, lo que implica que no pueda haber dos reinas en la misma fila.
