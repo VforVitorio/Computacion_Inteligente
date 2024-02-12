@@ -120,7 +120,7 @@ Al negar esta conclusion expresamos qué configuraciones no deberían ser válid
 
 Como se puede ver, hemos usado las variables **F,C,D y S** para abreviar una fórmula en la FNC
 
-# Implmentacion del código
+# Implementacion del código
 
 Cuando miramos el código lo primero que nos impacta son el uso de los bucles for para las restricciones. Sin embargo, no es tan complicado como parece.
 
@@ -158,4 +158,11 @@ for i in range(n):
    * Ejemplo: Casilla a: (fila 1, columna 2) y Casilla b: (fila 3, columna 0)
    * Casilla a: **abs(1 - 3) = 2** y Casilla b: **abs(2 - 0) = 2**
    * Dado este caso, se crea la cláusula SAT que restringe que esto pueda ocurrir.
+
+## Salida
+
+El programa devuelve la codificación DIMACS que soluciona el programa de las n reinas
+
+> [!WARNING]
+> Para poder ejecutar el programa, copiar la salida en un archivo de texto y procesarlo posteriormente con un solucionador SAT como CLASP
 
