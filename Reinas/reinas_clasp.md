@@ -119,3 +119,43 @@ Al negar esta conclusion expresamos qué configuraciones no deberían ser válid
 (F1 /\ F2 /\ F3 /\ F4) /\ (C1 /\ C2 /\ C3 /\ C4) /\ (D1 /\ D2 /\ D3 /\ D4) /\ (S1 /\ S2 /\ S3 /\ S4) /\ -(P11 /\ P22)
 
 Como se puede ver, hemos usado las variables **F,C,D y S** para abreviar una fórmula en la FNC
+
+# Implmentacion del código
+
+Cuando miramos el código lo primero que nos impacta son el uso de los bucles for para las restricciones. Sin embargo, no es tan complicado como parece.
+
+### Restriccion por fila
+```prolog
+for i in range(n):
+        casilla.append([n*i + j + 1 for j in range(n)])
+```
+* El primer blucle itera sobre cada dila del tablero N*N desde 0 a n-1
+* En la instrucción apppend, nos crea una lista dentro de otra lista (casilla). cada nueva lista que se agrega represta una fila de tablero.
+   * Por ejemplo si tuvieramos un tablero n = el contenido de la lista casilla sería [[1,2], [3,4]]
+
+## Restricción por columna
+```prolog
+    for i in range(n):
+        for j in range(n):
+            for k in range(j+1, n):
+                casilla.append([-((n*i + j) + 1), -((n*i + k) + 1)])
+```
+*Los dos primeros bucles se usan para recorrer el tablero vertical y longitudinamente. Mientras que el ultimo bucle se usa para evitar que se comparen dos veces la misma casilla.
+
+## Restricción por diagonal
+```prolog
+      for i in range(n):
+        for j in range(n):
+            for k in range(i+1, n):
+                for l in range(n):
+                    if (abs(i - k) == abs(j - l)):
+                        casilla.append([-((n*i + j) + 1), -((n*k + l) + 1)])
+```
+
+* Se itera sobre cada fila y columna del tablero mediante dos bucles for.
+* Para cada posición (i, j) en el tablero, se compara con todas las demás posiciones (k, l) utilizando dos bucles for adicionales.
+* Para saber si dos reinas están en la misma diagonal aplicamos la diferencia absoluta. Es decir , si la resta de sus cordenadas es la misma, diremos que están en la misma diagonal
+   * Ejemplo: Casilla a: (fila 1, columna 2) y Casilla b: (fila 3, columna 0)
+   * Casilla a: **abs(1 - 3) = 2** y Casilla b: **abs(2 - 0) = 2**
+   * Dado este caso, se crea la cláusula SAT que restringe que esto pueda ocurrir.
+
