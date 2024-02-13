@@ -86,7 +86,7 @@ miembro(lucia, testing).
 miembro(carmen, optimizacion).
 ```
 
-Cada linea define el mimebro(Nombre, Habilidad), que establece que un nombre del equipo tiene determinada habilidad
+Cada linea define el miembro(Nombre, Habilidad), que establece que un nombre del equipo tiene determinada habilidad
 
 4. Las restricciones en si, entre las que encontramos dos.
 
@@ -96,7 +96,7 @@ Cada linea define el mimebro(Nombre, Habilidad), que establece que un nombre del
    1 { asignacion(Miembro, Tarea) : miembro(Miembro, Habilidad) } 1 :- tarea(Tarea, Habilidad).
    ```
 
-   La primera parte de la pa:
+   La primera parte de la linea:
 
    ```prolog
    1 { asignacion(Miembro, Tarea) : miembro(Miembro, Habilidad) } 1
