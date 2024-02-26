@@ -25,4 +25,14 @@ Una empresa de desarrollo software desea asignar tareas a un pequeño equipo de 
 
 ### Distancia de Levenshtein para el Foro 04
 
-[En este enlace se encuentra la explicación al Foro 03](Foro_04/Foro_04.ipynb)
+a distancia de Levenshtein tiene grandes aplicaciones en diferentes ámbitos. Es una métrica que sirve para medir la diferencia entre dos cadenas de caracteres.
+
+Se define como el número mínimo de operaciones necesarias para transformar una cadena en otra y tiene como operaciones permitidas:
+
+1. Inserción.
+2. Eliminación.
+3. Sustitución de caracteres.
+
+Se trata de un abordaje difuso para medir la similitud entre cadenas de caracteres.
+
+[En este notebook realizado para el Foro 04](Foro_04/Foro_04.ipynb) se intentará realizar una implentación de esta distancia sin usar las librerías que ya traen predefinidas las funcionalidades que ofrece el cálculo de esta distancia.
