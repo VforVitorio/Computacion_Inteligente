@@ -22,3 +22,7 @@ Deseamos crear un enunciado ASP y su solución por medio del solucionador Clingo
 Una empresa de desarrollo software desea asignar tareas a un pequeño equipo de desarrollo de una IA como parte de un proyecto de la empresa. Cada tarea requiere de unos conocimientos y habilidades específicas y cada miembro posee especialización en una de estas habilidades. Dada la complejidad del desarrollo, cada miembro del equipo solo puede trabajar en una tarea a la vez. El objetivo es maximizar la eficiencia del equipo asignando las tareas de la forma adecuada.
 
 [En este enlace se encuentra la explicación al Foro 03](Foro_03/Foro_03.md)
+
+### Distancia de Levenshtein para el Foro 04
+
+[En este enlace se encuentra la explicación al Foro 03](Foro_04/Foro_04.ipynb)
