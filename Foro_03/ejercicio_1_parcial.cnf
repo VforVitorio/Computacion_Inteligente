@@ -1,0 +1,6 @@
+c v = 1 vex = 2 eo = 3 s = 4 dia = 5 es = 6 et = 7 
+c 7 átomos y 3 clausulas
+p cnf 7 2 
+2 -1 2 3 0 
+6 -4 7 0  
+2 -1 2  3  0
